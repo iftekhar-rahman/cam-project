@@ -34,3 +34,6 @@
 .fa-times:before {
   content: "\f00d";
 }
+.fa-search:before {
+  content: "\f002";
+}
