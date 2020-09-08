@@ -5,7 +5,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <title></title>
+        <title>Title</title>
         
         <!--Libraries-->
         <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -37,40 +37,50 @@
                                 <a href="#"><i class="fa fa-share-square-o"></i></a>
                             </div>
                         </div><!-- site-header ends -->
-                        <div class="image-here-section">
-                            <div class="uploaded-image mb-4">
-                                <img src="img/uploaded.jpg" alt="">
-                            </div>
-                            <ul>
-                                <li><a href="#">Edit</a></li>
-                                <li class="active"><a href="#">Download</a></li>
-                                <li><a href="#">Preview</a></li>
-                            </ul>
-                        </div>
                     </div>
                 </div>
+            </div>
+            <div class="image-here-section">
+                <div class="uploaded-image mb-4">
+                    <img src="img/uploaded.jpg" alt="">
+                </div>
+                <ul>
+                    <li><a href="#">Edit</a></li>
+                    <li class="active"><a href="#">Download</a></li>
+                    <li><a href="#">Preview</a></li>
+                </ul>
             </div>
             <div class="category-area">
                 <div class="container">
                     <div class="row">
                         <div class="col">
                             <div class="categories-section2">
-                                <ul>
-                                    <li><a href="#">Category 1</a></li>
-                                    <li><a href="#">Category 2</a></li>
-                                    <li class="active"><a href="#">Selected Category</a></li>
-                                    <li><a href="#">Category 3</a></li>
-                                </ul>
+                                <div class="section-carousel">
+                                    <div class="owl-carousel random-carousel-3">
+                                        <div class="single-carousel-item ">
+                                            <a href="#">Category 1</a>
+                                        </div>
+                                        <div class="single-carousel-item ">
+                                            <a href="#">Category 2</a>
+                                        </div>
+                                        <div class="single-carousel-item active">
+                                            <a href="#">Selected Category</a>
+                                        </div>
+                                        <div class="single-carousel-item">
+                                            <a href="#">Category 4</a>
+                                        </div>
+                                    </div>
+                                </div><!-- section-carousle ends -->
                             </div><!-- categories-section ends -->
                             <div class="search-box position-relative">
                                 <form action="#">
-                                    <input type="text" placeholder="Search"/>
+                                    <input id="myInput" type="text" placeholder="Search"/>
                                     <button type="submit" value="submit"><i class="fa fa-search"></i></button>
-                                    <span class="close-icon"><i class="fa fa-close"></i></span>
+                                    <span onclick="document.getElementById('myInput').value = ''"  class="close-icon"><i class="fa fa-close"></i></span>
                                 </form>
                             </div><!-- search-box ends -->
                             <div class="section-carousel">
-                                <div class="owl-carousel random-carousel-3">
+                                <div class="owl-carousel random-carousel-4">
                                     <div class="single-carousel-item text-center">
                                         <img src="img/image.png" alt="">
                                         <p>Text 1</p>

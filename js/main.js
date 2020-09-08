@@ -8,6 +8,7 @@ jQuery(document).ready(function($){
 		var newimage = new FileReader();
 		newimage.readAsDataURL(this.files[0]);
 		newimage.onload = function (e) {
+			$('#bg').css('background-image', 'url("./img/image.png")');
 			$('.uploadpreview.' + id).css('background-image', 'url(' + e.target.result + ')');
 		};
 		$('<span class="close-btn"><i class="fa fa-close"></i></span>').insertAfter(this);
@@ -43,6 +44,15 @@ jQuery(document).ready(function($){
         margin: 15,
     });
     $('.random-carousel-3').owlCarousel({
+        items: 4,
+        loop: true,
+        nav: false,
+        dots: false,
+        autoplay: false,
+        margin: 5,
+        autoWidth: true,
+    });
+    $('.random-carousel-4').owlCarousel({
         items: 3,
         loop: true,
         nav: false,
