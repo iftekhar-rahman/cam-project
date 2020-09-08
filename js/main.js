@@ -11,14 +11,32 @@ jQuery(document).ready(function($){
 			$('#bg').css('background-image', 'url("./img/image.png")');
 			$('.uploadpreview.' + id).css('background-image', 'url(' + e.target.result + ')');
 		};
-		$('<span class="close-btn"><i class="fa fa-close"></i></span>').insertAfter(this);
+		$('<span class="close-btn"><img src="./img/clear.png" alt="close">').insertAfter(this);
 	});
 	$(document).on('click', 'span.close-btn', function () {
 		$($(this)[0].previousElementSibling.previousElementSibling).css('background-image', '');
 		$(this).remove();
 	});
 
-    // homepage-slides
+    // import {tns} from './tiny-slider.js';
+    // var slider = tns({
+    //     container: '.my-slider',
+    //     items: 1,
+    //     // responsive: {
+    //     //   640: {
+    //     //     edgePadding: 20,
+    //     //     gutter: 20,
+    //     //     items: 2
+    //     //   },
+    //     //   700: {
+    //     //     gutter: 30
+    //     //   },
+    //     //   900: {
+    //     //     items: 3
+    //     //   }
+    //     // }
+    //   });
+    // featured-carousel
     $('.featured-carousel').owlCarousel({
         items: 3,
         loop: true,
