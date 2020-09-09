@@ -18,28 +18,10 @@ jQuery(document).ready(function($){
 		$(this).remove();
 	});
 
-    // import {tns} from './tiny-slider.js';
-    // var slider = tns({
-    //     container: '.my-slider',
-    //     items: 1,
-    //     // responsive: {
-    //     //   640: {
-    //     //     edgePadding: 20,
-    //     //     gutter: 20,
-    //     //     items: 2
-    //     //   },
-    //     //   700: {
-    //     //     gutter: 30
-    //     //   },
-    //     //   900: {
-    //     //     items: 3
-    //     //   }
-    //     // }
-    //   });
     // featured-carousel
     $('.featured-carousel').owlCarousel({
         items: 3,
-        loop: true,
+        loop: false,
         nav: false,
         dots: false,
         autoplay: false,
@@ -47,7 +29,7 @@ jQuery(document).ready(function($){
     });
     $('.random-carousel-1').owlCarousel({
         items: 3,
-        loop: true,
+        loop: false,
         nav: false,
         dots: false,
         autoplay: false,
@@ -55,7 +37,7 @@ jQuery(document).ready(function($){
     });
     $('.random-carousel-2').owlCarousel({
         items: 3,
-        loop: true,
+        loop: false,
         nav: false,
         dots: false,
         autoplay: false,
@@ -63,7 +45,7 @@ jQuery(document).ready(function($){
     });
     $('.random-carousel-3').owlCarousel({
         items: 4,
-        loop: true,
+        loop: false,
         nav: false,
         dots: false,
         autoplay: false,
@@ -72,7 +54,7 @@ jQuery(document).ready(function($){
     });
     $('.random-carousel-4').owlCarousel({
         items: 3,
-        loop: true,
+        loop: false,
         nav: false,
         dots: false,
         autoplay: false,
