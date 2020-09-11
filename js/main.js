@@ -37,4 +37,69 @@ jQuery(document).ready(function($){
         swipeToSlide: true
     });
 
+    var p = document.getElementById("rrange"),
+    res = document.getElementById("percent");
+
+    p.addEventListener("input", function() {
+      res.innerHTML = p.value + "%";
+      $('#percent').css('left', p.value * 3.7 - 15);
+      $('.value_ident').css('width', p.value*4);
+    }, false);
+    $('.rang').on({
+        mousedown: function () {
+            $('#percent').addClass('active');
+        },
+        mouseup: function () {
+            $('#percent').removeClass('active');
+        }
+    });
+
+    // Tab JS
+    $('.tabs a').click(function(){
+      $('.panel').hide();
+      $('.tabs a.active').removeClass('active');
+      $(this).addClass('active');
+
+      var panel = $(this).attr('href');
+      $(panel).fadeIn(1000);
+
+      return false;  // prevents link action
+    });  // end click 
+    $('.tabs li:first a').click();
+
+    // js for color selections
+    $(".single-color-item").on("click", function(){
+      $(".single-color-item").removeClass("active");
+      $(this).addClass("active");
+    });
+    // js for redo-undo-btns
+    $(".redo-undo-btns").on("click", function(){
+      $(".redo-undo-btns").removeClass("active");
+      $(this).addClass("active");
+    });
+    // js for text-alignment
+    $(".single-font-alignment").on("click", function(){
+      $(".single-font-alignment").removeClass("active");
+      $(this).addClass("active");
+    });
+    // js for redo-undo-btns
+    $(".redo-undo-btns").on("click", function(){
+      $(".redo-undo-btns").removeClass("active");
+      $(this).addClass("active");
+    });
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
 });

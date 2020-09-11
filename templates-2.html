@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <title>Title</title>
+
+        <!--Plugins-->
+        <link href="css/slick.css" rel="stylesheet">
+
+        <!--Theme specific styles-->
+        <link href="css/style.css" rel="stylesheet">
+        
+        <!--Core jQuery-->
+        <script src="js/jquery-3.3.1.slim.min.js"></script>
+        <script src="js/jquery-migrate-1.4.1.min.js"></script>
+    </head>
+    <body>
+
+		<div class="site-wrap overflow-hidden">
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <div class="site-header d-flex justify-content-between">
+                            <div class="col-one">
+                                <div class="position-relative">
+                                    
+                                </div>
+                            </div>
+                            <div class="col-three text-right">
+                                <a href="#">Done</a>
+                            </div>
+                        </div><!-- site-header ends -->
+                    </div>
+                </div>
+            </div>
+            <div class="image-here-section">
+                <div class="uploaded-image">
+                    <img src="img/uploaded.jpg" alt="largeImage">
+                </div>
+            </div><!-- image-here-section ends -->
+            <div class="form-wrapper">
+                <div class="container">
+                    <div class="row">
+                        <div class="col">
+                            <div class="form-header d-flex justify-content-between">
+                                <div class="redo-undo-buttons d-flex">
+                                    <div class="redo-undo-btns active">
+                                        <img src="img/undo-enabled.png" alt="undo">
+                                    </div>
+                                    <div class="redo-undo-btns">
+                                        <img src="img/redo-enabled.png" alt="redo">
+                                    </div>
+                                </div>
+                                <div class="toggle-button d-flex align-items-center text-right">
+                                    <span>Text layer</span>
+                                    <label class="switch">
+                                        <input type="checkbox" checked>
+                                        <span class="slider round"></span>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- tabbedPanels starts -->
+                <div class="tabbedPanels">  
+                    <ul class="tabs">
+                        <li><a href="#panel1">Font</a></li>
+                        <li><a href="#panel2">Outline</a></li>
+                        <li><a href="#panel3">Shadow</a></li>
+                    </ul>
+                    <div class="panelContainer">
+                        <!-- panel1 starts -->
+                        <div id="panel1" class="panel overflow-hidden">
+                            <div class="color-box d-flex justify-content-center">
+                                <div class="single-color-item active">
+                                    <span class="black"></span>
+                                </div>
+                                <div class="single-color-item">
+                                    <span class="blue"></span>
+                                </div>
+                                <div class="single-color-item">
+                                    <span class="red"></span>
+                                </div>
+                                <div class="single-color-item">
+                                    <span class="yellow"></span>
+                                </div>
+                                <div class="single-color-item">
+                                    <span class="green"></span>
+                                </div>
+                                <div class="single-color-item">
+                                    <span class="turquoise"></span>
+                                </div>
+                                <div class="single-color-item">
+                                    <span class="purple"></span>
+                                </div>
+                                <div class="single-color-item">
+                                    <span class="purple"></span>
+                                </div>
+                                <div class="single-color-item">
+                                    <span class="purple"></span>
+                                </div>
+                                <div class="single-color-item">
+                                    <span class="purple"></span>
+                                </div>
+                                <div class="single-color-item">
+                                    <span class="purple"></span>
+                                </div>
+                                <div class="single-color-item">
+                                    <span class="purple"></span>
+                                </div>
+                            </div><!-- color-box ends -->
+                            <div class="range-slider-wrap">
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col">
+                                            <div class="range-wrapper">
+                                                <!-- <div id="percent" class="">0%</div> -->
+                                                <input id="rrange" type="range" class="rang" value="50" min="0" max="100"  />
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div><!-- range-slider ends -->
+                            <div class="bottom-section">
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col d-flex justify-content-between">
+                                            <div class="font-change d-flex align-items-center">
+                                                <div class="font-change-btn">
+                                                    <span><img src="img/font-change.png" alt="font-change"></span>
+                                                </div>
+                                            </div>
+                                            <div class="font-alignment d-flex justify-content-between align-items-center">
+                                                <div class="single-font-alignment">
+                                                    <span></span>
+                                                    <span></span>
+                                                    <span></span>
+                                                    <span></span>
+                                                </div>
+                                                <div class="single-font-alignment center active">
+                                                    <span></span>
+                                                    <span></span>
+                                                    <span></span>
+                                                    <span></span>
+                                                </div>
+                                                <div class="single-font-alignment right">
+                                                    <span></span>
+                                                    <span></span>
+                                                    <span></span>
+                                                    <span></span>
+                                                </div>
+                                                <div class="single-font-alignment full">
+                                                    <span></span>
+                                                    <span></span>
+                                                    <span></span>
+                                                    <span></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div><!-- bottom-section ends -->
+                        </div><!-- end panel 1 -->
+                        <!-- panel2 starts -->
+                        <div id="panel2" class="panel">
+                            <div class="color-box d-flex justify-content-center">
+                                <div class="single-color-item active">
+                                    <span class="black"></span>
+                                </div>
+                                <div class="single-color-item">
+                                    <span class="blue"></span>
+                                </div>
+                                <div class="single-color-item">
+                                    <span class="red"></span>
+                                </div>
+                                <div class="single-color-item">
+                                    <span class="yellow"></span>
+                                </div>
+                                <div class="single-color-item">
+                                    <span class="green"></span>
+                                </div>
+                                <div class="single-color-item">
+                                    <span class="turquoise"></span>
+                                </div>
+                                <div class="single-color-item">
+                                    <span class="purple"></span>
+                                </div>
+                                <div class="single-color-item">
+                                    <span class="purple"></span>
+                                </div>
+                                <div class="single-color-item">
+                                    <span class="purple"></span>
+                                </div>
+                                <div class="single-color-item">
+                                    <span class="purple"></span>
+                                </div>
+                                <div class="single-color-item">
+                                    <span class="purple"></span>
+                                </div>
+                                <div class="single-color-item">
+                                    <span class="purple"></span>
+                                </div>
+                            </div><!-- color-box ends -->
+                            <div class="range-slider-wrap">
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col">
+                                            <div class="range-wrapper">
+                                                <!-- <div id="percent" class="">0%</div> -->
+                                                <input id="rrange" type="range" class="rang" value="50" min="0" max="100"  />
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div><!-- range-slider ends -->
+                            <div class="bottom-section">
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col d-flex justify-content-between">
+                                            <div class="font-change d-flex align-items-center">
+                                                <div class="font-change-btn">
+                                                    <span><img src="img/font-change.png" alt="font-change"></span>
+                                                </div>
+                                            </div>
+                                            <div class="font-alignment d-flex justify-content-between align-items-center">
+                                                <div class="single-font-alignment">
+                                                    <span></span>
+                                                    <span></span>
+                                                    <span></span>
+                                                    <span></span>
+                                                </div>
+                                                <div class="single-font-alignment center active">
+                                                    <span></span>
+                                                    <span></span>
+                                                    <span></span>
+                                                    <span></span>
+                                                </div>
+                                                <div class="single-font-alignment right">
+                                                    <span></span>
+                                                    <span></span>
+                                                    <span></span>
+                                                    <span></span>
+                                                </div>
+                                                <div class="single-font-alignment full">
+                                                    <span></span>
+                                                    <span></span>
+                                                    <span></span>
+                                                    <span></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div><!-- bottom-section ends -->
+                        </div> <!-- end panel 2 -->
+                        <div id="panel3" class="panel">
+                            <div class="color-box d-flex justify-content-center">
+                                <div class="single-color-item active">
+                                    <span class="black"></span>
+                                </div>
+                                <div class="single-color-item">
+                                    <span class="blue"></span>
+                                </div>
+                                <div class="single-color-item">
+                                    <span class="red"></span>
+                                </div>
+                                <div class="single-color-item">
+                                    <span class="yellow"></span>
+                                </div>
+                                <div class="single-color-item">
+                                    <span class="green"></span>
+                                </div>
+                                <div class="single-color-item">
+                                    <span class="turquoise"></span>
+                                </div>
+                                <div class="single-color-item">
+                                    <span class="purple"></span>
+                                </div>
+                                <div class="single-color-item">
+                                    <span class="purple"></span>
+                                </div>
+                                <div class="single-color-item">
+                                    <span class="purple"></span>
+                                </div>
+                                <div class="single-color-item">
+                                    <span class="purple"></span>
+                                </div>
+                                <div class="single-color-item">
+                                    <span class="purple"></span>
+                                </div>
+                                <div class="single-color-item">
+                                    <span class="purple"></span>
+                                </div>
+                            </div><!-- color-box ends -->
+                            <div class="range-slider-wrap">
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col">
+                                            <div class="range-wrapper">
+                                                <!-- <div id="percent" class="">0%</div> -->
+                                                <input id="rrange" type="range" class="rang" value="50" min="0" max="100"  />
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div><!-- range-slider ends -->
+                            <div class="bottom-section">
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col d-flex justify-content-between">
+                                            <div class="font-change d-flex align-items-center">
+                                                <div class="font-change-btn">
+                                                    <span><img src="img/font-change.png" alt="font-change"></span>
+                                                </div>
+                                            </div>
+                                            <div class="font-alignment d-flex justify-content-between align-items-center">
+                                                <div class="single-font-alignment">
+                                                    <span></span>
+                                                    <span></span>
+                                                    <span></span>
+                                                    <span></span>
+                                                </div>
+                                                <div class="single-font-alignment center active">
+                                                    <span></span>
+                                                    <span></span>
+                                                    <span></span>
+                                                    <span></span>
+                                                </div>
+                                                <div class="single-font-alignment right">
+                                                    <span></span>
+                                                    <span></span>
+                                                    <span></span>
+                                                    <span></span>
+                                                </div>
+                                                <div class="single-font-alignment full">
+                                                    <span></span>
+                                                    <span></span>
+                                                    <span></span>
+                                                    <span></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div><!-- bottom-section ends -->
+                        </div>  <!-- end panel 3 -->
+                    </div>
+                </div> <!-- tabbedPanels ends -->
+            </div>
+        </div>
+
+        <!--Plugins-->
+        <script src="js/slick.min.js"></script>
+
+        <!--Active & Custom JS-->
+        <script src="js/main.js"></script>
+    </body>
+</html>
