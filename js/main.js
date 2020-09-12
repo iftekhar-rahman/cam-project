@@ -18,24 +18,24 @@ jQuery(document).ready(function($){
     });
 
     // carousel js
-    $('.featured-carousel, .random-carousel-1, .random-carousel-2, .random-carousel-4').slick({
-        slidesToShow: 3,
-        dots:false,
-        arrows: false,
-        easing: 'linear',
-        infinite: true,
-        swipeToSlide: true
-    });
+    // $('.featured-carousel, .random-carousel-1, .random-carousel-2').slick({
+    //     slidesToShow: 3,
+    //     dots:false,
+    //     arrows: false,
+    //     easing: 'linear',
+    //     infinite: true,
+    //     swipeToSlide: true
+    // });
     // carousel js
-    $('.random-carousel-3').slick({
-        slidesToShow: 3,
-        dots:false,
-        variableWidth: true,
-        arrows: false,
-        easing: 'linear',
-        infinite: true,
-        swipeToSlide: true
-    });
+    // $('.random-carousel-3').slick({
+    //     slidesToShow: 3,
+    //     dots:false,
+    //     variableWidth: true,
+    //     arrows: false,
+    //     easing: 'linear',
+    //     infinite: true,
+    //     swipeToSlide: true
+    // });
 
     // JS for range slider
     // var p = document.getElementById("rrange"),
@@ -83,10 +83,24 @@ jQuery(document).ready(function($){
       $(".single-font-alignment").removeClass("active");
       $(this).addClass("active");
     });
-    // js for redo-undo-btns
+
+    // $(".font-change-btn").on("click", function(){
+    //   $(".font-change, .site-wrap").removeClass("font-active");
+    //   $(this).addClass("font-active");
+    // });
     $(".font-change-btn").on("click", function(){
-      $(".font-change").toggleClass("active");
+      $(".font-change, .site-wrap").toggleClass("active");
     });
+    $(".site-wrap.active").on("click", function(){
+      $(".font-change, .site-wrap").removeClass("active");
+    });
+    // $(".font-change-btn").on("click", function(){
+    //   $(".font-change, .site-wrap").removeClass("active");
+    // });
+    // js for redo-undo-btns
+    // $(".font-change-btn").on("click", function(){
+    //   $(".font-change").toggleClass("active");
+    // });
 
 
 
