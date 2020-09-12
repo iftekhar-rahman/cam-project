@@ -84,11 +84,6 @@ jQuery(document).ready(function($){
       $(this).addClass("active");
     });
     // js for redo-undo-btns
-    $(".redo-undo-btns").on("click", function(){
-      $(".redo-undo-btns").removeClass("active");
-      $(this).addClass("active");
-    });
-    // js for redo-undo-btns
     $(".font-change-btn").on("click", function(){
       $(".font-change").toggleClass("active");
     });
