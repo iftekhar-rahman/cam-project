@@ -37,22 +37,23 @@ jQuery(document).ready(function($){
         swipeToSlide: true
     });
 
-    var p = document.getElementById("rrange"),
-    res = document.getElementById("percent");
+    // JS for range slider
+    // var p = document.getElementById("rrange"),
+    // res = document.getElementById("percent");
 
-    p.addEventListener("input", function() {
-      res.innerHTML = p.value + "%";
-      $('#percent').css('left', p.value * 3.7 - 15);
-      $('.value_ident').css('width', p.value*4);
-    }, false);
-    $('.rang').on({
-        mousedown: function () {
-            $('#percent').addClass('active');
-        },
-        mouseup: function () {
-            $('#percent').removeClass('active');
-        }
-    });
+    // p.addEventListener("input", function() {
+    //   res.innerHTML = p.value + "%";
+    //   $('#percent').css('left', p.value * 3.7 - 15);
+    //   $('.value_ident').css('width', p.value*4);
+    // }, false);
+    // $('.rang').on({
+    //     mousedown: function () {
+    //         $('#percent').addClass('active');
+    //     },
+    //     mouseup: function () {
+    //         $('#percent').removeClass('active');
+    //     }
+    // });
 
     // Tab JS
     $('.tabs a').click(function(){
@@ -86,6 +87,10 @@ jQuery(document).ready(function($){
     $(".redo-undo-btns").on("click", function(){
       $(".redo-undo-btns").removeClass("active");
       $(this).addClass("active");
+    });
+    // js for redo-undo-btns
+    $(".font-change-btn").on("click", function(){
+      $(".font-change").toggleClass("active");
     });
 
 
