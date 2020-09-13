@@ -7,9 +7,6 @@
 
         <title>Title</title>
 
-        <!--Plugins-->
-        <link href="css/slick.css" rel="stylesheet">
-
         <!--Theme specific styles-->
         <link href="css/style.css" rel="stylesheet">
         
@@ -18,7 +15,7 @@
         <script src="js/jquery-migrate-1.4.1.min.js"></script>
     </head>
     <body>
-
+        
 		<div class="site-wrap overflow-hidden">
             <div class="container">
                 <div class="row">
@@ -179,7 +176,17 @@
                                         <div class="col">
                                             <div class="range-wrapper">
                                                 <!-- <div id="percent" class="">0%</div> -->
-                                                <input id="rrange1" type="range" class="rang" value="50" min="0" max="100"  />
+                                                <!-- <input id="rrange1" type="range" class="rang" value="50" min="0" max="100"  /> -->
+                                                <!-- <input type="range" value="0"> -->
+                                                <!-- <div id="h4-container"><div id="h4-subcontainer"><h4>0<span></span></h4></div></div> -->
+
+                                                <div class="slider-container">
+                                                    <input id="slider" type="range"  min="0" max="100" value="50">
+                                                    <div class="fill"></div>
+                                                </div>
+	<!-- input#slider(type='range' min='0' max='100' value='0')
+	.count 0
+	.fill -->
                                             </div>
                                         </div>
                                     </div>
@@ -208,9 +215,29 @@
                                                             <input type="radio" id="font4" name="font">
                                                             <label for="font4">Chlakboard</label>
                                                         </div>
-                                                        <div class="single-font futura">
-                                                            <input type="radio" id="font5" name="font">
-                                                            <label for="font5">Futura</label>
+                                                        <div class="single-font lato">
+                                                            <input type="radio" id="font6" name="font">
+                                                            <label for="font6">Lato</label>
+                                                        </div>
+                                                        <div class="single-font montserrat">
+                                                            <input type="radio" id="font7" name="font">
+                                                            <label for="font7">Montserrat</label>
+                                                        </div>
+                                                        <div class="single-font open-sans">
+                                                            <input type="radio" id="font8" name="font">
+                                                            <label for="font8">Open Sans</label>
+                                                        </div>
+                                                        <div class="single-font poppins">
+                                                            <input type="radio" id="font9" name="font">
+                                                            <label for="font9">Poppins</label>
+                                                        </div>
+                                                        <div class="single-font roboto">
+                                                            <input type="radio" id="font10" name="font">
+                                                            <label for="font10">Roboto</label>
+                                                        </div>
+                                                        <div class="single-font source-sans-pro">
+                                                            <input type="radio" id="font11" name="font">
+                                                            <label for="font11">Source Sans Pro</label>
                                                         </div>
                                                     </form>
                                                 </div>
@@ -356,7 +383,11 @@
                                         <div class="col">
                                             <div class="range-wrapper">
                                                 <!-- <div id="percent" class="">0%</div> -->
-                                                <input id="rrange2" type="range" class="rang" value="50" min="0" max="100"  />
+                                                <!-- <input id="rrange2" type="range" class="rang" value="50" min="0" max="100"  /> -->
+                                                <div class="wrapper">
+                                                    <input id="volume" type="range" min="0" max="100" step="1" />
+                                                    <label class="visually-hidden" for="volume">Volume</label>
+                                                  </div>
                                             </div>
                                         </div>
                                     </div>
@@ -485,10 +516,7 @@
                 </div> <!-- tabbedPanels ends -->
             </div>
         </div>
-
-        <!--Plugins-->
-        <script src="js/slick.min.js"></script>
-
+        <div class="overlay"></div>
         <!--Active & Custom JS-->
         <script src="js/main.js"></script>
     </body>
