@@ -31,9 +31,12 @@ jQuery(document).ready(function($){
     $('.tabs li:first a').click();
 
     // js for color selections
-    $(".single-color-item").on("click", function(){
-      $(".single-color-item").removeClass("active");
+    $(".single-color-item.addclass").on("click", function(){
+      $(".single-color-item.addclass").removeClass("active");
       $(this).addClass("active");
+    });
+    $(".single-color-item.color-picker").on("click", function(){
+      $(".single-color-item.addclass").removeClass("active");
     });
     // js for redo-undo-btns
     $(".redo-undo-btns").on("click", function(){
