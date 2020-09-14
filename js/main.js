@@ -62,6 +62,21 @@ jQuery(document).ready(function($){
     slider.oninput = function() {
       $('.fill').css('width', this.value + '%');
     }
+    var slider = document.getElementById("slider2");
+    slider.oninput = function() {
+      $('.fill2').css('width', this.value + '%');
+    }
+    var slider = document.getElementById("slider3");
+    slider.oninput = function() {
+      $('.fill3').css('width', this.value + '%');
+    }
+
+    // js for text-alignment
+    $(".slider.round").on("click", function(){
+      $(".color-box, .range-wrapper, .bottom-section, .font-change, .overlay, .tabs").toggleClass("disbale");
+    });
+    
+
 
     
 
