@@ -81,7 +81,7 @@ jQuery(document).ready(function($){
 
     // js for text-alignment
     $(".slider.round").on("click", function(){
-      $(".color-box, .range-wrapper, .bottom-section, .font-change, .overlay, .tabs, .overlay2, .toggle-button").toggleClass("disbale");
+      $(".color-box, .range-wrapper, .bottom-section, .font-change, .overlay, .tabs, .overlay2, .toggle-button, .redo-undo-buttons").toggleClass("disbale");
     });
     
 
