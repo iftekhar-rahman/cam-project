@@ -35,14 +35,17 @@ jQuery(document).ready(function($){
       $(".single-color-item.addclass").removeClass("active");
       $(this).addClass("active");
     });
+
     $(".single-color-item.color-picker").on("click", function(){
       $(".single-color-item.addclass").removeClass("active");
     });
+
     // js for redo-undo-btns
     $(".redo-undo-btns").on("click", function(){
       $(".redo-undo-btns").removeClass("active");
       $(this).addClass("active");
     });
+
     // js for text-alignment
     $(".single-font-alignment").on("click", function(){
       $(".single-font-alignment").removeClass("active");
@@ -53,9 +56,11 @@ jQuery(document).ready(function($){
     $(".font-change-btn").on("click", function(){
       $(".font-change").toggleClass("active");
     });
+
     $(".font-change-btn").on("click", function(){
       $(".overlay").toggleClass("active");
     });
+    
     $(".overlay").on("click", function(){
       $(".overlay, .font-change").removeClass("active");
     });
@@ -76,7 +81,7 @@ jQuery(document).ready(function($){
 
     // js for text-alignment
     $(".slider.round").on("click", function(){
-      $(".color-box, .range-wrapper, .bottom-section, .font-change, .overlay, .tabs").toggleClass("disbale");
+      $(".color-box, .range-wrapper, .bottom-section, .font-change, .overlay, .tabs, .overlay2, .toggle-button").toggleClass("disbale");
     });
     
 
